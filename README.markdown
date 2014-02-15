@@ -12,22 +12,30 @@ J'ai écrit ce programme juste pour le fun !!? Java etait le langage proposé do
 
 Comprenez que ceci est possible:
 `0 : (10, 0, 0, 0, 0)`
+
 `1 : (9, 1, 0, 0, 0)`
+
 `2 : (8, 1, 1, 0, 0)`
+
 `3 : (7, 1, 1, 1, 0)`
+
 `4 : (6, 1, 1, 1, 1)`
 
 
 mais pas:
 `0 : (10, 0, 0, 0, 0)`
+
 `1 : (9, 0, 0, 0, 1)`
+
 `2 : (8, 0, 0, 0, 2)`
+
 `3 : (7, 0, 0, 1, 2)`
+
 `4 : (6, 0, 0, 2, 2)`
 
 Pour résoudre ce problème, lors de mon parcours du tableau, j'ai du sauver l'état du tableau à l'étape précédente. Je n'avais jamais effectué cette opération jusqu'a maintenant. Apparemment il existe plusieurs moyens de le faire. J'ai choisi:
 
-``` java copie d'un tableau start:51 mark:51
+``` Java copie d'un tableau start:51 mark:51
 
 int[] step = Arrays.copyOf(previousStep, l.size);
 
