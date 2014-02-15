@@ -27,9 +27,11 @@ mais pas:
     3 : (7, 0, 0, 1, 2)
     4 : (6, 0, 0, 2, 2)
 
+
 Pour résoudre ce problème, lors de mon parcours du tableau, j'ai du sauver l'état du tableau à l'étape précédente. Je n'avais jamais effectué cette opération jusqu'a maintenant. Apparemment il existe plusieurs moyens de le faire. J'ai choisi:
 
-```java copie d'un tableau
+
+```java
 
 int[] step = Arrays.copyOf(previousStep, l.size);
 
